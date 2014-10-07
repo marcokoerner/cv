@@ -1,0 +1,188 @@
+\documentclass{scrartcl}
+%\usepackage[left=2cm,right=2cm,top=3cm,bottom=5cm]{geometry} % page layout
+
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[autostyle]{csquotes}
+\usepackage{xcolor}
+\usepackage[linkbordercolor=white,urlbordercolor=white]{hyperref}
+\usepackage{scrpage2}
+
+\tolerance=200 % white space
+\clubpenalty = 1000 % orphans
+\widowpenalty = 1000 % widows
+
+% ===========================
+%    VARIABLES
+% ===========================
+%    must be defined, BEFORE koma-moderncvclassic is loaded!
+
+% address; not needed variables should be commented out
+\renewcommand*{\title}{Curriculum Vitae}% fÃ¼r PDF
+\newcommand*{\firstname}{Marco}
+\newcommand*{\familyname}{Körner}
+\newcommand*{\acadtitle}{Dr. rer. nat.}
+\newcommand*{\addressstreet}{University of Iceland\\ Faculty of Physical Sciences\\ Dunhagi 3}
+\newcommand*{\addresscity}{107 Reykjavík, Ísland}
+\newcommand*{\address}[2]{\addressstreet{#1}\addresscity{#2}}
+\newcommand*{\mobile}{+354 525 5801}
+%\newcommand*{\homepage}{www.marcokoerner.com}
+\newcommand*{\email}{marco@hi.is}
+%\newcommand*{\extrainfo}{www.marcokoerner.com}
+%\renewcommand*{\quote}{}
+
+% ===========================
+%    LENGTHS
+% ===========================
+%    must be defined, BEFORE koma-moderncvclassic is loaded!
+
+% left column width (default value: 2,79cm)
+% uncomment the \newlength-command, and uncomment and adjust one of the \set...-commands to change the default value
+% \newlength\myhintscolumnwidth
+% \settowidth\myhintscolumnwidth{Left column takes this text's width}
+% \setlength\myhintscolumnwidth{.3\textwidth}
+% \setlength\myhintscolumnwidth{5cm}
+
+
+% ===========================
+%    KOMA-MODERNCVCLASSIC
+% ===========================
+
+\usepackage{koma-moderncvclassic} % color theme as option; default = myblue; other predefined colors that may be used: red, green, blue, cyan, magenta, yellow, black, white, darkgray, gray, lightgray
+
+
+% ===========================
+%    ADAPTIONS
+% ===========================
+%\renewcommand*{\familydefault}{\sfdefault}% default font sans-serif
+%\renewcommand*{\addressfont}{\normalsize\sffamily\mdseries\slshape}% sans-serif font for address, too
+%\renewcommand{\firstnamefont}{\fontsize{24}{26}\sffamily\mdseries\upshape} % name in smaller font
+\newcommand*{\totalpagemark}{\usekomafont{pagenumber}\thepage/\pageref{lastpage}}% for page and pagetotal
+ 
+% ===========================
+%    HEAD- AND FOOTLINES
+% ===========================
+\pagestyle{scrheadings}
+\clearscrheadfoot
+\addtokomafont{pageheadfoot}{\upshape}
+%\ihead{\emph{Spin-labeled oligonucleotides for in-cell EPR studies}}
+%\ohead{\emph{Dr. Marco Körner}}
+%\ifoot{CV~\firstname~\familyname}
+\cfoot{\pagemark}
+
+
+% ===========================
+%    BIBLIOGRAPHY
+% ===========================
+
+%\usepackage[style=authortitle,sorting=ydnt]{biblatex}
+%\addbibresource{cvbasic.bib}
+%\bibliography{cvbasic.bib}
+%\defbibheading{bibliography}[Publications]{\section{#1}}
+
+% ==================================================================
+%       DOCUMENT
+% ==================================================================
+
+\begin{document}
+
+
+\maketitle
+
+
+\section{Education}
+%\cventry{years}{degree/jobtitle}{institution/employer}{localization}{optional: grade/...}{optional: comment/job description}
+
+%\cventry{08.07.2013}{PhD examination (Dr. rer. nat.)}{Technical University of Darmstadt, Germany}{}{}{}
+\cventry{2009 -- 2013}{PhD thesis (Dr. rer. nat.)}{Technical University of Darmstadt, Germany}{research group of Prof. Dr. Gerd Buntkowsky}{}{Thesis title: \enquote{Design, Synthesis, and Application of Modular Building Blocks for Structural Investigations of Functional Peptides}}
+\cventry{2004 -- 2009}{Studies of chemistry (Dipl.-Chem.)}{}{Friedrich Schiller University of Jena, Germany}{}{}
+\cventry{2000 -- 2003}{Training as a skilled chemical worker (Chemikant)}{Bayer Bitterfeld GmbH}{Bitterfeld, Germany}{}{}
+\cventry{02.07.1999}{A-levels (Abitur)}{Gymnasium Jessen}{Jessen (Elster), Germany}{}{}
+
+\section{Experience}
+
+\cventry{since 01.09.2013}{Postdoctoral researcher}{University of Iceland}{research group of Prof. Snorri Sigurdsson}{}{}
+\cventry{2009 -- 2012}{Graduate assistant}{Technical University of Darmstadt, Germany}{}{}{supervision in the lab course \enquote{Physical Chemistry}}
+\cventry{2012 -- 2012}{Supervision of the BSc thesis}{\enquote{Improving the Peptide Synthesis of Triazole-Based Dipeptide-Mimics, Using Functional Model Compounds of Nickel Superoxide Dismutase}, by BSc Velten Horn}{}{}{}
+\cventry{2011 -- 2012}{Supervision of the academic work for the final state examination }{\enquote{Synthese von Modellpeptiden für PHIP-verstärkte NMR" (synthesis of model peptides for PHIP-enhancend NMR)}}{by Heiko Weidler}{}{}
+\cventry{2011 -- 2012}{Supervision of the BSc thesis}{\enquote{Synthesis of specific conformers of triazole-based prolylmimetica via 1,3-dipolar cycloaddition}}{by BSc Philipp Rottmann}{}{}
+\cventry{2011 -- 2011}{Supervision of the BSc thesis}{\enquote{Synthesis and characterization of functional mutants of NiSOD-based model peptides}, by BSc Thi Bich Tien Nguyen}{}{}{}
+\cventry{2007 -- 2008}{Undergraduate assistant}{Friedrich Schiller University of Jena}{}{}{Seminar \enquote{Chemistry for doctors of medicine and stomatologists}} 
+\cventry{2008}{Undergraduate assistant}{Friedrich Schiller University of Jena}{}{}{Lab course \enquote{Chemistry for doctors of medicine and stomatologists}}
+\cventry{2003 -- 2004}{Skilled chemical worker (Chemikant)}{Bayer Bitterfeld GmbH}{Bitterfeld, Germany}{}{}
+% \cventry{1999 -- 2000}{Grundwehrdienst}{Deutsche Bundeswehr}{}{}{}
+
+\section{Funding}
+\cventry{2014 -- 2016}{Research scholarship}{German Academic Exchange Service (DAAD)}{Postdoc programme}{}{}
+
+%\section{Certificates}
+%\cventry{2012}{\enquote{Laboratory didactics}}{Technical University of Darmstadt}{Hochschuldidaktische Arbeitsstelle}{}{}
+%\cventry{2009}{\enquote{Gute Lehrveranstaltungen: Ein Raum zum Lernen}}{Technical University of Darmstadt}{Hochschuldidaktische Arbeitsstelle}{}{}
+
+%\section{Languages}
+%\cvlanguage{German}{\mbox{native speaker}}{}
+%\cvlanguage{English}{fluent}{}
+%\cvlanguage{Icelandic}{\mbox{basic knowledge}}{}
+%\cvlanguage{French}{\mbox{basic knowledge}}{}
+%\cvlanguage{Japanisch}{Grundkenntnisse}{Spracherwerb an der Volkshochschule für ein Jahr}
+
+%\section{Verschiedenes}
+%\cventry{seit 07/2009}{Mitglied in einer politischen Partei}{}{}{}{}
+%\cventry{2012 -- 2013}{Mitglied der Expertenrunde des Online Self-Assessments der Technischen Universität Darmstadt}{}{}{}{}
+%\cventry{27.03.2011}{Antritt zur Wahl der Stadtverordnetenversammlung}{Wissenschaftsstadt Darmstadt}{}{}{}
+%\cventry{2007 -- 2009}{Betreiben von Kend\=o (Japanischer Schwertkampf)}{SeiShinKai Jena e.V.}{}{Grad: 5. Ky\=u}{}
+%\cventry{2006 -- 2008}{Mitglied des Fachschaftsrates Chemie}{Friedrich-Schiller-Universität Jena}{}{}{}
+%\cventry{2001 -- 2003}{Mitglied der Jugend- und Auszubildenenvertretung}{Bayer Bitterfeld GmbH}{Bitterfeld}{}{}
+
+%\section{Persönliche Angaben}
+%\cvline{Geburtsdatum}{14. März 1981}
+%\cvline{Geburtsort}{Potsdam}
+%\cvline{Familienstand}{verheiratet}
+%\cvline{Nationalität}{deutsch}
+
+%\pagebreak
+
+\section{Publications}
+
+\begin{enumerate}
+\item \textbf{Marco Körner},$^\ddagger$ Grit Sauer,$^\ddagger$   Andreas Heil, Daichi Nasu, Martin Empting, Daniel Tietze, Stephan Voigt, Heiko Weidler, Torsten Gutmann, Olga Avrutina, Harald Kolmar, Tomasz Ratajczyk und Gerd Buntkowsky ($^\ddagger$ authors contributed equally),   
+\enquote{PHIP-label: Parahydrogen-Induced Polarization in Propargylglycine-Containing Synthetic Oligopeptides},
+
+\emph{Chem. Commun.}, \textbf{2013}, \emph{(49)}, 7839--7841. doi:  \href{http://dx.doi.org/10.1039/C3CC43978J}{10.1039/C3CC43978J}
+
+\item \textbf{Marco Tischler},$^\ddagger$ Daichi Nasu,$^\ddagger$ Martin Empting,$^\ddagger$ Stefan Schmelz, Dirk Heinz, Philipp Rottmann, Harald Kolmar, Gerd Buntkowsky, Daniel Tietze and Olga Avrutina ($^\ddagger$ authors contributed equally),
+\enquote{Braces for the Peptide Backbone: Insights into Structure--Activity Relationships of Protease Inhibitor Mimics with Locked Amide Conformations},
+
+\emph{Angew. Chem. Int. Ed.}, \textbf{2012}, \emph{(51:15)}, 3708--3712. doi: \href{http://dx.doi.org/10.1002/anie.201108983}{10.1002/anie.201108983}
+
+\item Daniel Tietze, Stephan Voigt, Doreen Mollenhauer, \textbf{Marco Tischler}, Diana Imhof, Torsten Gutmann, Leticia Gonz\'alez, Oliver Ohlenschl\"ager, Hergen Breitzke, Mat\-thias G\"orlach and Gerd Buntkowsky,
+\enquote{Revealing the Position of the Substrate in Nickel Superoxide Dismutase: a Model Study},
+
+\emph{Angew. Chem. Int. Ed.}, \textbf{2011}, \emph{(50:13)}, 2946--2950. doi: \href{http://dx.doi.org/10.1002/anie.201005027}{10.1002/anie.201005027}
+
+\item Daniel Tietze, \textbf{Marco Tischler}, Stephan Voigt, Diana Imhof, Oliver Ohlenschl\"ager, Mat\-thias G\"orlach and Gerd Buntkowsky,
+\enquote{Development of a Functional \emph{cis}-Prolyl Bond Biomimetic and Mechanistic Implications for Nickel Superoxide Dis\-mutase},
+
+\emph{Chem.  Eur. J.}, \textbf{2010}, \emph{(16:25)}, 7572--7578. doi: \href{http://dx.doi.org/10.1002/chem.200903306}{10.1002/chem.200903306}
+\end{enumerate}
+
+\clearpage
+
+\section{Talks}
+\begin{enumerate}
+\item \enquote{Design, Synthesis, and Application of Modular Building Blocks for Structural Investigations of Functional Peptides},\\ University of Iceland, Reykjavik, 7th March 2014
+\item \enquote{NMR \enquote{Crystallography} of Enzyme Models},\\ Ampere NMR Summer School, Zakopane (Poland), 19th -- 25th June 2011
+\item \enquote{Peptide-based Models of the NiSOD},\\ Shanghai Normal University (China), 24th March 2010
+\end{enumerate}
+
+\section{Poster Presentations}
+\begin{enumerate}
+\item \enquote{Towards Trityl-Containing Nucleic Acids for EPR Spectroscopy},\\ EUROMAR 2014, Z\"urich (Switzerland), 29th June -- 3rd July 2014
+\item \enquote{NMR \enquote{Crystallography} of Enzyme Models},\\ EUROMAR 2011, Frankfurt (Germany) 21th -- 25th August 2011
+\item \enquote{Peptide-based Models of the NiSOD},\\ Ampere NMR School, Poznan and Wierzba (Poland), 17th -- 26th June 2010
+\end{enumerate}
+
+\label{lastpage}% needed for computing pagetotal
+\end{document}
